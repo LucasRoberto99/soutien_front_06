@@ -24,11 +24,14 @@ const Signup = () => {
 
       //
 
-      const result = await axios.post("http://localhost:3000/api/user/signup", {
-        username,
-        email,
-        password,
-      });
+      const result = await axios.post(
+        "https://site--soutien-06--fhx5w78hhgzd.code.run/api/user/signup",
+        {
+          username,
+          email,
+          password,
+        }
+      );
 
       console.log(result.data);
     } catch (error) {
